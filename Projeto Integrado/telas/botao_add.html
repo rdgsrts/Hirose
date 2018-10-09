@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    
+    <title>Pra Inglês ver</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    
+    <style>
+      /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+      /*html { overflow-y: hidden; }*/
+
+      .row.content {height: 1500px}
+      
+      /* Set gray background color and 100% height */
+      .sidenav {
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+      
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height: auto;} 
+      }
+    </style>
+  
+  </head>
+
+  <body>
+   
+  <div class="container-fluid">
+    
+    <!--INICIO-->
+    <BR>
+    
+    <div class="jumbotron">
+      
+      <h1 align="center">Pra Inglês ver.</h1>
+      <!--h5 align="center">novo_botao.html</h5-->
+    
+    </div>
+    <!--FIM-->
+    
+    <div class="row content">
+      
+      <div class="col-sm-12">
+        
+        <h2>
+          
+          <small>NOVA LIGA</small>
+        
+        </h2>
+        
+        <HR>
+
+        <form class="col-sm-12">
+          
+          <input type="radio" value="criar_liga"> Nova liga
+
+          <BR>
+          
+          <input type="radio" value="liga_existente">Usar liga existente
+          <BR>
+    
+          <button class="btn btn-block btn-primary">Confirmar</button>
+
+          <HR>
+
+        </form> 
+        
+        <HR>
+      
+        <form class="col-sm-4">
+          
+          <label for="email">Nome da Liga:</label>
+          <input class="form-control" placeholder="Nome da liga" type="text">
+              
+          <label for="email">Nº de times:</label>
+          <input class="form-control" placeholder="Nº de times" type="text">           
+        
+        </form>
+
+        <form class="col-sm-12" name="entra_equipes">
+          
+          <HR>
+
+          <label for="email">Times:</label>
+          
+          <input class="form-control" placeholder="Times" type="text">
+          
+          <BR>
+
+          <input class="input-lg form-control" placeholder="Lista de times" type="text">
+          <BR>
+
+          <button type="button" class="btn btn-primary" href="#section1">
+            Adicionar
+          </button>
+
+          <button type="button" class="btn btn-success" href="#section1">
+            Editar
+          </button>
+
+          <button type="button" class="btn btn-danger" href="#section1">
+            Remover
+          </button>
+
+          <!--label>Nº de times:</label>
+          <input class="input-lg form-control" placeholder="Nº de times" type="text"-->           
+        
+          <HR>
+        
+        </form>
+
+        <form class="col-sm-8">
+          
+          Número de jogos:
+          <input type="number" name="n_de_jogos"
+           min="1" max="6" step="1">
+
+          <button type="button" class="btn btn-lg btn-info">
+            OK
+          </button>
+          
+          <HR>
+        
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="col-sm-12 container-fluid">
+      
+    <p align="center">Pra inglês ver</p>
+    <p align="center">Cópiraiti &copy; 2018</p>  
+  
+  </footer>
+
+</body>
+
+</html>

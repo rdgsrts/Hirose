@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+    <title>Pra Inglês ver</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    
+    <style>
+      /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+      /*html { overflow-y: hidden; }*/
+
+      .row.content {height: 1500px}
+      
+      /* Set gray background color and 100% height */
+      .sidenav {
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+      
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height: auto;} 
+      }
+    
+    </style>
+  
+  </head>
+
+  <body>
+   
+  <div class="container-fluid">
+
+    <br>
+    
+    <div class="jumbotron">
+      
+      <h1 align="center">Pra Inglês ver.</h1>
+    
+    </div>
+
+    <div class="row content">
+      
+      <div class="col-sm-12">
+        
+        <hr>
+        
+        <!--Usar NAVs-->
+        
+        <ul class="col-sm-12 nav nav-tabs">
+          
+          <li> <a data-toggle="tab" href="#admin_liga">Administração de liga</a> </li>
+          <li>
+          
+          <li class="dropdown">
+              
+              <a class="dropdown-toggle" data-toggle="dropdown">Administração Geral
+              <span class="caret"></span></a>
+              
+              <ul class="dropdown-menu">
+                
+                <li><a data-toggle="modal" href="#Jogador">Jogadores</a></li>
+                <li><a href="#">Times</a></li>
+                <li><a href="#">Árbitros </a></li>
+              
+              </ul>
+          
+          </li>
+        
+        </ul> 
+        
+        <!--Usar NAVs-->
+
+        <!--Administração de liga-->
+        <div class="tab-content">
+
+          <div id="admin_liga" class="col-sm-9 tab-pane fade in active">
+          
+          <h1>
+            <small align="center">CLASSIFICAÇÃO</small>
+          </h1>
+
+          <table class="table table-bordered">
+            
+            <thead>
+
+              
+              <tr>
+                
+                <th>Posição</th>
+                <th>Clube</th>
+                <th>Jogos</th>
+              
+              </tr>
+            
+            </thead>
+    
+            <tbody>
+              
+              <tr>
+                
+                <td>Um</td>
+                <td>Dois</td>
+                <td>Tres</td>
+              
+              </tr>
+
+              <tr>
+                
+                <td>Quatro</td>
+                <td>Cinco</td>
+                <td>Seis</td>
+              
+              </tr>
+            
+            </tbody>
+          
+          </table>
+        
+          </div>
+
+          <div id="admin_liga" class="col-sm-3 tab">
+        
+            <h4>Selecione</h4>
+            
+            <ul class="nav nav-pills nav-stacked">
+              
+              <li>
+                <button type="button" class="btn btn-block btn-success" href="#section1">Tabelas</button>
+
+                <button type="button" class="btn btn-block btn-success" href="#section1">Partidas</button>
+
+              </li>
+            
+            </ul>
+        
+          </div>
+
+        </div>
+        <!--Administração de liga-->
+
+        <!--Administração Geral-->
+
+        <!-- Modal -->
+        <div id="Jogador" class="modal fade" role="dialog">
+          
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Adicionar jogador</h4>
+              
+              </div>
+              
+              <div class="modal-body">
+
+                <!--img align="center" src="Soccer-Ball-icon.png"-->
+
+                <input type="text" class="form-control" id="usr">
+              
+              </div>
+              
+              <div class="modal-footer">
+                
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Adicionar</button>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              
+              </div>
+            
+            </div>
+
+          </div>
+        
+        </div>
+        <!-- Modal -->
+
+        <!--Administração Geral-->
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <footer class="container-fluid">
+  
+    <p align="center">Pra inglês ver</p>
+    <p align="center">Cópiraiti o cêzinho 2018</p>
+  
+  </footer>
+
+  </body>
+
+</html>

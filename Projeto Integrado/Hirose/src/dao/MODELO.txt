@@ -1,0 +1,131 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import dao.ConnectionFactory;
+import model.Olimpiada;
+
+public class OlimpiadaDAO 
+{
+
+	/*public int criar(Olimpiada olm) 
+	{
+		String sqlInsert = "INSERT INTO Olimpiada(nome, idade, email) VALUES (?, ?, ?)";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlInsert);) {
+			stm.setString(1, olm.getNome());
+			stm.setInt(2, olm.getIdade());
+			stm.setString(3, olm.getEmail());
+			stm.execute();
+			String sqlQuery = "SELECT LAST_INSERT_ID()";
+			try (PreparedStatement stm2 = conn.prepareStatement(sqlQuery);
+					ResultSet rs = stm2.executeQuery();) 
+			{
+				if (rs.next()) 
+				{
+					olm.setId(rs.getInt(1));
+				}
+			} 
+			catch (SQLException e) 
+			{
+				e.printStackTrace();
+			}
+		
+		} 
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return olm.getId();
+	}
+
+	public void atualizar(Olimpiada olm) {
+		String sqlUpdate = "UPDATE Olimpiada SET nome=?, idade=?, email=? WHERE id=?";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlUpdate);) {
+			stm.setString(1, olm.getNome());
+			stm.setInt(2, olm.getIdade());
+			stm.setString(3, olm.getEmail());
+			stm.setInt(4, olm.getId());
+			stm.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void excluir(int id) {
+		String sqlDelete = "DELETE FROM Olimpiada WHERE idAnoF = ?";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlDelete);) {
+			stm.setInt(1, id);
+			stm.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Olimpiada carr(int id) 
+	{
+		Olimpiada olm = new Olimpiada();
+		olm.setId(id);
+		
+		String sqlSelect = "SELECT nome, idade, email FROM Olimpiada WHERE Olimpiada.idAnoF = ?";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+			stm.setInt(1, olm.getId());
+			try (ResultSet rs = stm.executeQuery();) {
+				if (rs.next()) {
+					olm.setNome(rs.getString("nome"));
+					olm.setIdade(rs.getInt("idade"));
+					olm.setEmail(rs.getString("email"));
+				} else {
+					olm.setId(-1);
+					olm.setNome(null);
+					olm.setIdade(0);
+					olm.setEmail(null);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e1) {
+			System.out.print(e1.getStackTrace());
+		}
+		return olm;
+	}
+	public ArrayList<Olimpiada> carregar(int id) 
+	{
+		Olimpiada olm = new Olimpiada();
+		olm.setId(id);
+		
+		String sqlSelect = "SELECT nome, idade, email FROM Olimpiada WHERE Olimpiada.idAnoF = ?";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+			stm.setInt(1, olm.getId());
+			try (ResultSet rs = stm.executeQuery();) {
+				if (rs.next()) {
+					olm.setAno(rs.getString("nome"));
+					olm.setMo(rs.getInt("idade"));
+					olm.setEmail(rs.getString("email"));
+				} else {
+					olm.setId(-1);
+					olm.setNome(null);
+					olm.setIdade(0);
+					olm.setEmail(null);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e1) {
+			System.out.print(e1.getStackTrace());
+		}
+		return olm;
+	}*/
+}
